@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dalton Tokyo in Minecraft</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700;800&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="video-stage" aria-hidden="true">
+      <video class="hero-video" autoplay muted loop playsinline>
+        <source src="assets/Website.mp4" type="video/mp4" />
+      </video>
+      <div class="video-fallback"></div>
+      <div class="video-vignette"></div>
+      <div class="video-darken"></div>
+    </div>
+
+    <header class="hero" id="top">
+      <div class="hero-content container">
+
+        <h1 class="main-title">Dalton Tokyo</h1>
+        <h2 class="secondary-title">
+          Junior &amp; Senior High School,<span class="secondary-tail">in Minecraft.</span>
+        </h2>
+
+        <a href="#access" class="cta">一般公開ワールドをダウンロード</a>
+      </div>
+    </header>
+
+    <div class="scroll-progress" aria-hidden="true">
+      <span class="scroll-progress-fill"></span>
+    </div>
+
+    <main>
+      <section class="section explanation container tracked-section" id="about">
+        <h3 class="section-title">Why in Minecraft?</h3>
+        <p class="jp-placeholder reveal">
+          ドルトン東京学園は、毎年複数回学校説明会を実施し、施設公開等をしてきました。しかし、近年は様々な事情で来校できず、オンライン上の写真のみを参考に本校の雰囲気を掴むざるを得ない状況の方が増加傾向にあります。その問題を解決するために作られたのがMinecraft上のドルトン東京学園。いつでも、どこからでも校舎の探検を可能にしました。
+        </p>
+      </section>
+
+      <section class="section explore container tracked-section" id="explore">
+        <h3 class="section-title">What This Unlocks</h3>
+        <div class="unlock-points reveal">
+          <button class="point-chip" type="button" data-key="campus">Campus Walkthrough</button>
+          <button class="point-chip" type="button" data-key="simulative">Simulative Environment</button>
+          <button class="point-chip" type="button" data-key="alumni">Alumni's Memory</button>
+        </div>
+      </section>
+
+      <section class="section access container tracked-section" id="access">
+        <h3 class="section-title">Open World Download</h3>
+        <p>Choose your version and download the world files directly.</p>
+
+        <div class="download-grid">
+          <article class="download-card reveal">
+            <h4>Java Edition</h4>
+            <p>For Minecraft Java Edition (PC/Mac).</p>
+         <a class="download-button" href="assets/DaltonTokyo-Java.zip" download>
+  ダウンロード (Java)
+</a>
+          </article>
+
+          <article class="download-card reveal">
+            <h4>Bedrock Edition</h4>
+            <p>For Minecraft Bedrock Edition (.mcworld).</p>
+            <a class="download-button" href="assets/DaltonTokyo一般.mcworld" download>
+              ダウンロード (Bedrock)
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section creators container tracked-section" id="creators">
+        <h3 class="section-title">Creators</h3>
+        <div class="creator-block reveal">
+          <p>
+            We are Dalton Tokyo students who designed and built this world to preserve the atmosphere of
+            our school in Minecraft.
+          </p>
+          <p><strong>Other works:</strong> Add your projects here.</p>
+          <p><strong>Contact:</strong> yourname@schoolmail.example / Instagram: @yourhandle</p>
+        </div>
+      </section>
+    </main>
+
+    <div class="topic-modal" id="topic-modal" aria-hidden="true">
+      <div class="topic-modal-backdrop" data-modal-close="true"></div>
+      <article
+        class="topic-modal-frame"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="topic-modal-title"
+        aria-describedby="topic-modal-description"
+      >
+        <button class="topic-modal-close" type="button" aria-label="Close popup" data-modal-close="true">
+          ×
+        </button>
+        <div class="topic-modal-body">
+          <div class="topic-modal-text">
+            <h4 id="topic-modal-title"></h4>
+            <p id="topic-modal-description"></p>
+          </div>
+          <div class="topic-modal-image" id="topic-modal-image" aria-hidden="true"></div>
+        </div>
+      </article>
+    </div>
+
+    <footer class="footer container">
+      <p>Dalton Tokyo Junior &amp; Senior High School in Minecraft</p>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
